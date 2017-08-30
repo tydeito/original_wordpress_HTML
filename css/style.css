@@ -86,6 +86,22 @@ h4 {
     h4 {
       text-align: left; } }
 
+h5 {
+  font-size: 1.8rem;
+  color: #3d63ba;
+  font-weight: bold;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 1.8rem; } }
+
+h5:before {
+  content: url("../images/01-3_treatment/paragraph.png");
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: 3px; }
+
 .baseColor_container {
   background: #f7fbfb; }
 
@@ -598,5 +614,72 @@ footer {
           text-align: left; } }
       .subpage_main_contents .picture .picture_fbox div img {
         margin-top: 45px; }
+
+/* treatment.html
+----------------------------------------------------------------*/
+#treatment_cover_area {
+  height: 180px;
+  padding: 0;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../images/01-3_treatment/02-3_treatment_cover.jpg"); }
+  @media (min-width: 768px) {
+    #treatment_cover_area {
+      margin-bottom: 50px; } }
+  #treatment_cover_area .sub_over_area {
+    position: relative;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #treatment_cover_area .sub_over_area {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    #treatment_cover_area {
+      background-image: url("../images/01-3_treatment/01-3_treatment_cover.jpg"); } }
+
+.float_right_picture {
+  float: right; }
+
+.mini_paragraph {
+  margin-bottom: 50px; }
+
+.illust_description_fbox {
+  -webkit-flex-direction: column;
+  /* Safari */
+  flex-direction: column;
+  margin-bottom: 70px; }
+  @media (min-width: 768px) {
+    .illust_description_fbox {
+      -webkit-flex-direction: row;
+      /* Safari */
+      flex-direction: row;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      /*左右に開くfbox*/ } }
+  .illust_description_fbox .illust_container {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .illust_description_fbox .illust_container {
+        width: 19%;
+        margin: 0; } }
+    .illust_description_fbox .illust_container .C4_illust {
+      position: relative;
+      top: 0; }
+    @media (min-width: 768px) {
+      .illust_description_fbox .illust_container {
+        top: 30px; } }
+  .illust_description_fbox .description_container {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .illust_description_fbox .description_container {
+        width: 74%; } }
+    .illust_description_fbox .description_container .description_title {
+      font-size: 2.0rem;
+      font-weight: bold;
+      color: #3d63ba;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,7 @@ $keyColor: #ff8b2a;
 $fontColor: #292929;
 $footerColor: #ccf8f8;
 $nameColor: #757575;
+$subheadingColor: #3d63ba;
 
 // 
 
@@ -199,6 +200,25 @@ h4 {
     @media (min-width: 768px) {
         text-align: left;
     }
+}
+
+h5{
+    font-size: 1.8rem;
+    color: $subheadingColor;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+h5:before {
+      content : url("../images/01-3_treatment/paragraph.png") ;
+      display: inline-block;
+      margin-right: 6px;
+      position: relative;
+      top: 3px;
 }
 
 .baseColor_container {
@@ -874,6 +894,81 @@ footer {
                     margin-top: 45px;
                 }
             }
+        }
+    }
+
+}
+
+
+/* treatment.html
+----------------------------------------------------------------*/
+
+
+#treatment_cover_area {
+    @include sub_page_cover_area;
+    background-image: url("../images/01-3_treatment/02-3_treatment_cover.jpg");
+    //PC表示
+    @media (min-width:768px) { 
+        background-image: url("../images/01-3_treatment/01-3_treatment_cover.jpg");
+    }
+}  // .cover_area
+
+
+.float_right_picture{
+    float: right;
+}
+
+.mini_paragraph{
+    margin-bottom: 50px;
+}
+
+.illust_description_fbox{
+    
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+    margin-bottom: 70px;
+    
+    @media (min-width:768px) {
+        -webkit-flex-direction: row; /* Safari */
+        flex-direction:         row;
+        -webkit-justify-content: space-between; 
+        justify-content: space-between;  /*左右に開くfbox*/
+    }
+
+    .illust_container{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        
+        //PC表示
+        @media (min-width:768px) { 
+            width: 19%;
+            margin:0;
+        }
+        
+        .C4_illust{
+            position: relative;
+            top: 0;
+        }
+        //PC表示
+        @media (min-width:768px) { 
+            top: 30px;
+        }
+    }
+    
+    .description_container{
+        width: 100%;
+        
+        //PC表示
+        @media (min-width:768px) {
+            width: 74%;
+        }
+        
+        .description_title{
+            font-size: 2.0rem;
+            font-weight: bold;
+            color: $subheadingColor;
+            margin-bottom: 5px;
         }
     }
 
