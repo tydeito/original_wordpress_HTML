@@ -682,4 +682,27 @@ footer {
       color: #3d63ba;
       margin-bottom: 5px; }
 
+/* flow.html
+----------------------------------------------------------------*/
+#flow_cover_area {
+  height: 180px;
+  padding: 0;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../images/01-4_flow/02-4_flow_cover.jpg"); }
+  @media (min-width: 768px) {
+    #flow_cover_area {
+      margin-bottom: 50px; } }
+  #flow_cover_area .sub_over_area {
+    position: relative;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #flow_cover_area .sub_over_area {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    #flow_cover_area {
+      background-image: url("../images/01-4_flow/01-4_flow_cover.jpg"); } }
+
 /*# sourceMappingURL=style.css.map */
