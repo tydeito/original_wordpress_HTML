@@ -378,13 +378,14 @@ h5:before {
         #main_container .fbox .side_contents .time_table td {
           border: 1px #000 solid;
           padding: 3px; }
-      #main_container .fbox .side_contents .ggmap {
-        position: relative;
-        overflow: hidden;
-        border: solid #292929 1px; }
-        #main_container .fbox .side_contents .ggmap #map1 {
-          width: 100%;
-          height: 300px; }
+
+.ggmap {
+  position: relative;
+  overflow: hidden;
+  border: solid #292929 1px; }
+  .ggmap #map1 {
+    width: 100%;
+    height: 300px; }
 
 /* footer
 ----------------------------------------------------------------*/
@@ -704,5 +705,161 @@ footer {
   @media (min-width: 768px) {
     #flow_cover_area {
       background-image: url("../images/01-4_flow/01-4_flow_cover.jpg"); } }
+
+/* access.html
+----------------------------------------------------------------*/
+#access_cover_area {
+  height: 180px;
+  padding: 0;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../images/01-6_access/02-6_access_cover.jpg"); }
+  @media (min-width: 768px) {
+    #access_cover_area {
+      margin-bottom: 50px; } }
+  #access_cover_area .sub_over_area {
+    position: relative;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #access_cover_area .sub_over_area {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    #access_cover_area {
+      background-image: url("../images/01-6_access/01-6_access_cover.jpg"); } }
+
+.access_information table {
+  border: solid 1px #3d63ba;
+  width: 100%; }
+  .access_information table th {
+    border: solid 1px #3d63ba;
+    background: white;
+    font-weight: normal;
+    width: 30%;
+    padding: 4px 0; }
+  .access_information table td {
+    border: solid 1px #3d63ba;
+    background: white;
+    font-weight: normal;
+    width: 200%;
+    text-align: center;
+    padding: 4px 0; }
+    @media (min-width: 768px) {
+      .access_information table td {
+        padding-left: 20%;
+        text-align: left; } }
+
+.br::before {
+  content: "\a";
+  white-space: pre; }
+  @media (min-width: 768px) {
+    .br::before {
+      white-space: nowrap;
+      content: "\00a0\00a0\00a0"; } }
+
+.access_time_text {
+  margin-top: 20px;
+  text-align: right; }
+
+/* flow.html
+----------------------------------------------------------------*/
+#price_cover_area {
+  height: 180px;
+  padding: 0;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../images/01-5_price/02-5_price_cover.jpg"); }
+  @media (min-width: 768px) {
+    #price_cover_area {
+      margin-bottom: 50px; } }
+  #price_cover_area .sub_over_area {
+    position: relative;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #price_cover_area .sub_over_area {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    #price_cover_area {
+      background-image: url("../images/01-5_price/01-5_price_cover.jpg"); } }
+
+.price_text {
+  margin-bottom: 50px; }
+
+.price_table_fbox1 {
+  font-size: 1.2rem;
+  -webkit-flex-direction: column-reverse;
+  /* Safari */
+  flex-direction: column-reverse; }
+  @media (min-width: 768px) {
+    .price_table_fbox1 {
+      -webkit-flex-direction: row;
+      /* Safari */
+      flex-direction: row;
+      border-top: solid 1px #3d63ba; } }
+  .price_table_fbox1 .name_price {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .price_table_fbox1 .name_price {
+        width: 35%; } }
+    .price_table_fbox1 .name_price .price_table_fbox2 {
+      -webkit-justify-content: space-between;
+      /* Safari */
+      justify-content: space-between;
+      -webkit-flex-direction: column;
+      /* Safari */
+      flex-direction: column;
+      border-right: solid 1px #3d63ba; }
+      @media (min-width: 768px) {
+        .price_table_fbox1 .name_price .price_table_fbox2 {
+          border: solid 0 #3d63ba; } }
+      .price_table_fbox1 .name_price .price_table_fbox2 .price_table_fbox3 .price_name {
+        width: 50%;
+        box-sizing: border-box;
+        font-weight: bold;
+        border-bottom: solid 1px #3d63ba;
+        border-right: solid 1px #3d63ba;
+        border-left: solid 1px #3d63ba;
+        padding: 7px 0 7px 0; }
+      .price_table_fbox1 .name_price .price_table_fbox2 .price_table_fbox3 .price_price {
+        width: 50%;
+        box-sizing: border-box;
+        font-weight: bold;
+        border-bottom: solid 1px #3d63ba;
+        padding: 7px 0 7px 0; }
+  .price_table_fbox1 .price_img_container {
+    width: 200px;
+    height: 200px;
+    border: solid 1px #3d63ba;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .price_table_fbox1 .price_img_container {
+        border-left: solid 0 #3d63ba;
+        border-top: solid 0 #3d63ba;
+        width: 26%;
+        height: auto;
+        margin: 0; } }
+    .price_table_fbox1 .price_img_container .price_img {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translate3d(0, -50%, 0);
+      transform: translate3d(0, -50%, 0);
+      margin: suto; }
+  .price_table_fbox1 .price_description {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid 1px #3d63ba;
+    padding: 7px 5px 7px 5px; }
+    @media (min-width: 768px) {
+      .price_table_fbox1 .price_description {
+        width: 39%;
+        border-top: solid 0 #3d63ba; } }
 
 /*# sourceMappingURL=style.css.map */

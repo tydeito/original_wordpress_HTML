@@ -581,7 +581,14 @@ h5:before {
                     padding: 3px;
                 }
             }
-            .ggmap {
+         
+        } /*side_contents*/
+        
+    }
+    
+} //#main_container
+
+.ggmap {
                 position: relative;
                 
                 overflow: hidden;
@@ -593,13 +600,6 @@ h5:before {
                 }
                 
             }
-                 
-         
-        } /*side_contents*/
-        
-    }
-    
-} //#main_container
 
 
 /* footer
@@ -987,3 +987,196 @@ footer {
         background-image: url("../images/01-4_flow/01-4_flow_cover.jpg");
     }
 }  // .cover_area
+
+
+
+/* access.html
+----------------------------------------------------------------*/
+
+
+#access_cover_area {
+    @include sub_page_cover_area;
+    background-image: url("../images/01-6_access/02-6_access_cover.jpg");
+    //PC表示
+    @media (min-width:768px) { 
+        background-image: url("../images/01-6_access/01-6_access_cover.jpg");
+    }
+}  // .cover_area
+
+.access_information{
+    
+    table{
+        border: solid 1px $subheadingColor;
+        width: 100%;
+        
+        th{
+            border: solid 1px $subheadingColor;
+            background: white;
+            font-weight: normal;
+            width: 30%;
+            padding: 4px 0;
+        }
+        td{
+            border: solid 1px $subheadingColor;
+            background: white;
+            font-weight: normal;
+            width: 200%;
+            text-align: center;
+            padding: 4px 0;
+            
+            //PC表示
+            @media (min-width:768px) { 
+                padding-left: 20%;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.br::before {
+	content: "\A" ;
+	white-space: pre ;
+	
+	//PC表示
+    @media (min-width:768px) { 
+        white-space: nowrap ;
+        content: "\00a0\00a0\00a0";  //  contentではスペースは「\00a0」を使う
+    }
+}  // spで改行するための命令
+
+.access_time_text{
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+
+/* flow.html
+----------------------------------------------------------------*/
+
+
+#price_cover_area {
+    @include sub_page_cover_area;
+    background-image: url("../images/01-5_price/02-5_price_cover.jpg");
+    //PC表示
+    @media (min-width:768px) { 
+        background-image: url("../images/01-5_price/01-5_price_cover.jpg");
+    }
+}  // .cover_area
+
+.price_text{
+    margin-bottom: 50px;
+}
+
+
+.price_table_fbox1{
+    font-size: 1.2rem;
+    
+    -webkit-flex-direction: column-reverse; /* Safari */
+    flex-direction:         column-reverse;
+    
+    // PC表示
+    @media (min-width:768px) {
+        -webkit-flex-direction: row; /* Safari */
+        flex-direction:         row;
+        border-top: solid 1px $subheadingColor;
+    }
+    
+    
+    
+    .name_price{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        
+        // PC表示
+        @media (min-width:768px) {
+            width: 35%;
+        }
+        
+        .price_table_fbox2{
+            -webkit-justify-content: space-between; /* Safari */
+            justify-content:         space-between;
+            -webkit-flex-direction: column; /* Safari */
+            flex-direction:         column;
+            // border-top: solid 1px $subheadingColor;
+            border-right: solid 1px $subheadingColor;
+            
+            
+            // PC表示
+            @media (min-width:768px) {
+                border: solid 0 $subheadingColor;
+            }
+            
+            
+            .price_table_fbox3{
+                
+                
+                
+                .price_name{
+                    width: 50%;
+                    box-sizing: border-box;
+                    font-weight: bold;
+                    border-bottom: solid 1px $subheadingColor;
+                    border-right: solid 1px $subheadingColor;
+                    border-left: solid 1px $subheadingColor;
+                    padding: 7px 0 7px 0;
+                }
+                .price_price{
+                    width: 50%;   
+                    box-sizing: border-box;
+                    font-weight: bold;
+                    border-bottom: solid 1px $subheadingColor;
+                    padding: 7px 0 7px 0;
+                    
+                }
+            }
+        }
+    }
+    
+    .price_img_container{
+        width: 200px;
+        height: 200px;
+        border: solid 1px $subheadingColor;
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        
+        // PC表示
+        @media (min-width:768px) {
+            border-left: solid 0 $subheadingColor;
+            border-top: solid 0 $subheadingColor;
+            width: 26%;
+            height: auto;
+            margin: 0;
+        }
+        
+        .price_img{
+            
+            position: relative;
+            top: 50%;
+            -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+            margin:suto;
+        }
+    }
+    
+    
+    
+    .price_description{
+        
+        box-sizing: border-box;
+        width: 100%;
+        border: solid 1px $subheadingColor;
+        padding: 7px 5px 7px 5px;
+        
+        // PC表示
+        @media (min-width:768px) {
+            width: 39%;
+            border-top: solid 0 $subheadingColor;
+        }
+    }
+    
+
+}
